@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9856c32-36a5-4f66-bd8b-f34d35f740fb" name="Changes" comment="Data input/processing almost done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/RadiusCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/ScoringRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/OptionsCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" afterDir="false" />
+    <list default="true" id="e9856c32-36a5-4f66-bd8b-f34d35f740fb" name="Changes" comment="basic logic done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Updater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/Bucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TipperLorry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TipperLorry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/OptionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/OptionsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,9 @@
     "accountId": "2a717c96-f688-4e7b-b9c1-c19335902d6f"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -51,27 +56,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Maven.lab02 [clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,7 +104,7 @@
       <workItem from="1728902728266" duration="2761000" />
       <workItem from="1729434022680" duration="1836000" />
       <workItem from="1729435900985" duration="834000" />
-      <workItem from="1729436751175" duration="16693000" />
+      <workItem from="1729436751175" duration="23214000" />
     </task>
     <task id="LOCAL-00001" summary="Data input/processing almost done">
       <option name="closed" value="true" />
@@ -103,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729467316523</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="basic logic done">
+      <option name="closed" value="true" />
+      <created>1729512829294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512829294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Data input/processing almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data input/processing almost done" />
+    <MESSAGE value="basic logic done" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic logic done" />
   </component>
 </project>

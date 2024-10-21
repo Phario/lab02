@@ -16,11 +16,11 @@ public class OptionsCalculator {
         for (TowerSpot towerSpot : towerSpots) {
             //calculate points for not using any sand (leaving the field empty)
             //0 as the bucket no. indicates, that these are points for not building a tower
-            towerSpot.getPoints().put(pointCalculator.calculate(0,0,scoringRules[0]), 0);
+            towerSpot.getPoints().put(0 ,pointCalculator.calculate(0,0,scoringRules[0]));
             for (Bucket bucket : buckets) {
                 //calculate the points per bucket if it isn't empty
                 if (bucket.getContents() != 0) {
-                    towerSpot.getPoints().put(pointCalculator.calculate(towerSpot.getRadius(), bucket.getPileAngle(), scoringRules[1]), bucket.getBucketNo());
+                    towerSpot.getPoints().put(bucket.getBucketNo(), pointCalculator.calculate(towerSpot.getRadius(), bucket.getPileAngle(), scoringRules[1]));
                 }
             }
         }

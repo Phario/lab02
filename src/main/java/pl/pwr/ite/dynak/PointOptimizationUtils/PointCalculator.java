@@ -8,7 +8,7 @@ public class PointCalculator {
             return scoringRule;
         }
         double height = 2.123;
-        //formula for trapezoid height, converts it into points
+        //TODO: formula for trapezoid height and radius, converts it into points
         double points = height*scoringRule;
         return points;
     }

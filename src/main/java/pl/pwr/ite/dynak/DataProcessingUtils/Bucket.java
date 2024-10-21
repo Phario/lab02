@@ -5,13 +5,13 @@ import lombok.Setter;
 
 @Getter
 public class Bucket {
-    private final Integer maxCapacity;
+    private final Double maxCapacity;
     @Setter
-    private Integer contents;
+    private Double contents;
     private final Integer pileAngle;
     private final Integer bucketNo;
 
-    public Bucket(Integer bucketNo, Integer contents, Integer pileAngle) {
+    public Bucket(Integer bucketNo, Double contents, Integer pileAngle) {
         this.maxCapacity = contents;
         this.contents = contents;
         this.pileAngle = pileAngle;
