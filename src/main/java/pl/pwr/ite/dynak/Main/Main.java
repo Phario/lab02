@@ -15,7 +15,7 @@ public class Main {
         }
         ArrayList<TowerSpot> towerSpotArrayList = towerSpotMaker();
         for (TowerSpot TowerSpot : towerSpotArrayList) {
-            System.out.println(TowerSpot.spotNumber() + " " + TowerSpot.radius());
+            System.out.println(TowerSpot.getSpotNumber() + " " + TowerSpot.getRadius());
         }
     }
 }
