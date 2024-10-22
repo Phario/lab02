@@ -6,9 +6,10 @@ import pl.pwr.ite.dynak.DataProcessingUtils.TowerSpot;
 import java.util.ArrayList;
 import java.util.Set;
 
-//decides on the tower spot to build (or stop building)
+//makes decisions and builds towers
 public class Builder {
-    public static int[] chooseSpotAndBucket(ArrayList<TowerSpot> towerSpots, ArrayList<Bucket> buckets) {
+    //decides on the tower spot to build (or stop building)
+    public int[] chooseSpotAndBucket(ArrayList<TowerSpot> towerSpots, ArrayList<Bucket> buckets) {
         double points = 0;
         int bucketNumber = 0;
         int spotNumber = 0;

@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9856c32-36a5-4f66-bd8b-f34d35f740fb" name="Changes" comment="basic logic done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Updater.java" afterDir="false" />
+    <list default="true" id="e9856c32-36a5-4f66-bd8b-f34d35f740fb" name="Changes" comment="decision making done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Jury.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/Bucket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TipperLorry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TipperLorry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/RadiusCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/RadiusCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/OptionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/OptionsCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,7 @@
       <workItem from="1728902728266" duration="2761000" />
       <workItem from="1729434022680" duration="1836000" />
       <workItem from="1729435900985" duration="834000" />
-      <workItem from="1729436751175" duration="23214000" />
+      <workItem from="1729436751175" duration="30320000" />
     </task>
     <task id="LOCAL-00001" summary="Data input/processing almost done">
       <option name="closed" value="true" />
@@ -122,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729512829294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="decision making done">
+      <option name="closed" value="true" />
+      <created>1729548782300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729548782300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Data input/processing almost done" />
     <MESSAGE value="basic logic done" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic logic done" />
+    <MESSAGE value="decision making done" />
+    <option name="LAST_COMMIT_MESSAGE" value="decision making done" />
   </component>
 </project>
