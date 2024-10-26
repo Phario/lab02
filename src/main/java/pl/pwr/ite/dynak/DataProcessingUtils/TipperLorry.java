@@ -19,11 +19,12 @@ public class TipperLorry {
                 Bucket bucket = new Bucket(Integer.parseInt(numbers[0]), Double.parseDouble(numbers[1]), Integer.parseInt(numbers[2]));
                 buckets.add(bucket);
             }
+            reader.close();
             return buckets;
         }
         catch (IOException e) {
             System.out.println("File not found");
         }
-        return null;
+        return new ArrayList<>();
     }
 }

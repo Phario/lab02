@@ -12,7 +12,7 @@ public class OptionsCalculator {
 
     If this method returns a negative value, it indicates that a trapezoid cannot be built,
     instead, a cone can be built with an amount of points equal to the absolute value of the returned number*/
-    private void towerSpotPointsCalculator(ArrayList<TowerSpot> towerSpots, ArrayList<Bucket> buckets, int[] scoringRules) {
+    public void towerSpotPointsCalculator(ArrayList<TowerSpot> towerSpots, ArrayList<Bucket> buckets, double[] scoringRules) {
         //ArrayList<Float> results = new ArrayList<>();
         PointCalculator pointCalculator = new PointCalculator();
 
@@ -27,9 +27,11 @@ public class OptionsCalculator {
                     towerSpot.getPoints().put(bucket.getBucketNo(), pointCalculator.calculate(towerSpot.getRadius(), bucket.getPileAngle(), scoringRules[1], bucket.getContents()));
                 }
                 //set points per bucket to 0 if a bucket is empty:
-                else if (bucket.getContents() == 0) towerSpot.getPoints().put(bucket.getBucketNo(), 0.0);
+                else if (bucket.getContents() == 0) {
+                    Double[] empty = {0.0,0.0};
+                    towerSpot.getPoints().put(bucket.getBucketNo(), empty);
+                }
             }
         }
-
     }
 }

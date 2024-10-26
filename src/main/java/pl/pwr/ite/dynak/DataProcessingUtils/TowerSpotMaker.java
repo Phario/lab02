@@ -19,7 +19,7 @@ public class TowerSpotMaker {
             String data;
             while ((data = reader.readLine()) != null) {
                 String[] numbers = data.split(", ");
-                towerSpots.add(new TowerSpot(Integer.parseInt(numbers[0]), Integer.parseInt(numbers[1])));
+                towerSpots.add(new TowerSpot(Integer.parseInt(numbers[0]), Double.parseDouble(numbers[1])));
             }
             return towerSpots;
         }

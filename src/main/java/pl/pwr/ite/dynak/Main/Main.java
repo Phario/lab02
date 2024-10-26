@@ -7,15 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import static pl.pwr.ite.dynak.DataProcessingUtils.TipperLorry.*;
 import static pl.pwr.ite.dynak.DataProcessingUtils.TowerSpotMaker.*;
+import static pl.pwr.ite.dynak.Main.Competition.startCompetition;
+
 public class Main {
     public static void main(String[] args) throws IOException {
-        ArrayList<Bucket> Buckets = bucketLoader();
-        for (Bucket Bucket : Buckets) {
-            System.out.println(Bucket.getBucketNo() + " " + Bucket.getContents() + " " + Bucket.getPileAngle());
-        }
-        ArrayList<TowerSpot> towerSpotArrayList = towerSpotMaker();
-        for (TowerSpot TowerSpot : towerSpotArrayList) {
-            System.out.println(TowerSpot.getSpotNumber() + " " + TowerSpot.getRadius());
-        }
+        startCompetition();
+        System.out.print("Competition over! Check your score file.");
     }
 }
