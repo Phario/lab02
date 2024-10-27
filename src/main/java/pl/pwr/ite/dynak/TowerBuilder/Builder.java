@@ -81,13 +81,13 @@ public class Builder {
             for (Bucket bucket : buckets) {
                 if (points < abs(towerSpot.getPoints().get(bucket.getBucketNo())[0])) {
                     points = towerSpot.getPoints().get(bucket.getBucketNo())[0];
-                    volume = towerSpot.getPoints().get(0)[1];
+                    volume = towerSpot.getPoints().get(bucket.getBucketNo())[1];
                     bucketNumber = bucket.getBucketNo();
                     spotNumber = towerSpot.getSpotNumber();
                 }
             }
         }
+        System.out.println(spotNumber + " " + bucketNumber + " " + volume);
         return new double[]{spotNumber, bucketNumber, volume};
     }
-    //TODO: add scribe process, add updater, check the above for errors, pray to god I haven't fucked up the logic
 }
