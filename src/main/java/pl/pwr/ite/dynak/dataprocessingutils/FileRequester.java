@@ -1,4 +1,4 @@
-package pl.pwr.ite.dynak.DataProcessingUtils;
+package pl.pwr.ite.dynak.dataprocessingutils;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package pl.pwr.ite.dynak.DataProcessingUtils;
+package pl.pwr.ite.dynak.dataprocessingutils;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +11,7 @@ public class Bucket {
     private final Integer pileAngle;
     private final Integer bucketNo;
 
-    public Bucket(Integer bucketNo, Double contents, Integer pileAngle) {
+    public Bucket(Integer bucketNo, Integer pileAngle, Double contents) {
         this.maxCapacity = contents;
         this.contents = contents;
         this.pileAngle = pileAngle;

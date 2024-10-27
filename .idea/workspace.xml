@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9856c32-36a5-4f66-bd8b-f34d35f740fb" name="Changes" comment="it works and doesn't crash, needs to save each step to a file">
+    <list default="true" id="e9856c32-36a5-4f66-bd8b-f34d35f740fb" name="Changes" comment="everything works well, needs formatting changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/RadiusCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/RadiusCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/Main/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/Main/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/UpdateData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/Bucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/FileRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/FileRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/RadiusCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/RadiusCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/ScoringRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/ScoringRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TipperLorry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/TipperLorry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/TowerSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/DataProcessingUtils/TowerSpotMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/dataprocessingutils/TowerSpotMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/Main/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/main/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/OptionsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/pointoptimizationutils/OptionsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/PointOptimizationUtils/PointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/pointoptimizationutils/PointCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/towerbuilder/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/Jury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/towerbuilder/Jury.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/towerbuilder/ProcessScribe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +105,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.pwr.ite.dynak.Main.Main" />
+      <option name="MAIN_CLASS_NAME" value="pl.pwr.ite.dynak.main.Main" />
       <module name="lab02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.pwr.ite.dynak.Main.*" />
+          <option name="PATTERN" value="pl.pwr.ite.dynak.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,7 +121,7 @@
       <module name="lab02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.pwr.ite.dynak.PointOptimizationUtils.*" />
+          <option name="PATTERN" value="pl.pwr.ite.dynak.pointoptimizationutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,7 +136,7 @@
       <module name="lab02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.pwr.ite.dynak.PointOptimizationUtils.*" />
+          <option name="PATTERN" value="pl.pwr.ite.dynak.pointoptimizationutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,7 +178,7 @@
       <workItem from="1729436751175" duration="30320000" />
       <workItem from="1729889984063" duration="17128000" />
       <workItem from="1729975842311" duration="4040000" />
-      <workItem from="1729979950162" duration="5284000" />
+      <workItem from="1729979950162" duration="7535000" />
     </task>
     <task id="LOCAL-00001" summary="Data input/processing almost done">
       <option name="closed" value="true" />
@@ -204,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729974002031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="everything works well, needs formatting changes">
+      <option name="closed" value="true" />
+      <created>1730025426143</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730025426143</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +231,8 @@
     <MESSAGE value="basic logic done" />
     <MESSAGE value="decision making done" />
     <MESSAGE value="it works and doesn't crash, needs to save each step to a file" />
-    <option name="LAST_COMMIT_MESSAGE" value="it works and doesn't crash, needs to save each step to a file" />
+    <MESSAGE value="everything works well, needs formatting changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything works well, needs formatting changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,16 +241,6 @@
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/pwr/ite/dynak/TowerBuilder/ProcessScribe.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

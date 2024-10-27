@@ -1,4 +1,4 @@
-package pl.pwr.ite.dynak.DataProcessingUtils;
+package pl.pwr.ite.dynak.dataprocessingutils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static pl.pwr.ite.dynak.DataProcessingUtils.FileRequester.filePathRequest;
+import static pl.pwr.ite.dynak.dataprocessingutils.FileRequester.filePathRequest;
 
 public class TowerSpotMaker {
 

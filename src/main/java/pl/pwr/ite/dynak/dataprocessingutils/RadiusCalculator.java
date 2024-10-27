@@ -1,4 +1,4 @@
-package pl.pwr.ite.dynak.DataProcessingUtils;
+package pl.pwr.ite.dynak.dataprocessingutils;
 import static java.lang.Math.*;
 public class RadiusCalculator {
     public static double calculateNewRadius(double angle, double radius, double volume) {

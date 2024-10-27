@@ -1,6 +1,6 @@
-package pl.pwr.ite.dynak.PointOptimizationUtils;
+package pl.pwr.ite.dynak.pointoptimizationutils;
 import static java.lang.Math.*;
-import static pl.pwr.ite.dynak.DataProcessingUtils.RadiusCalculator.calculateNewRadius;
+import static pl.pwr.ite.dynak.dataprocessingutils.RadiusCalculator.calculateNewRadius;
 
 public class PointCalculator {
     /*actually does the job of OptionsCalculator (delegation)

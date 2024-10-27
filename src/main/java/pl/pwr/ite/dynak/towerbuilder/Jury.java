@@ -1,7 +1,7 @@
-package pl.pwr.ite.dynak.TowerBuilder;
+package pl.pwr.ite.dynak.towerbuilder;
 
-import pl.pwr.ite.dynak.DataProcessingUtils.Bucket;
-import pl.pwr.ite.dynak.DataProcessingUtils.TowerSpot;
+import pl.pwr.ite.dynak.dataprocessingutils.Bucket;
+import pl.pwr.ite.dynak.dataprocessingutils.TowerSpot;
 
 import java.util.ArrayList;
 

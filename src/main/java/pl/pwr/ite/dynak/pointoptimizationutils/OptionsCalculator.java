@@ -1,7 +1,7 @@
-package pl.pwr.ite.dynak.PointOptimizationUtils;
+package pl.pwr.ite.dynak.pointoptimizationutils;
 
-import pl.pwr.ite.dynak.DataProcessingUtils.Bucket;
-import pl.pwr.ite.dynak.DataProcessingUtils.TowerSpot;
+import pl.pwr.ite.dynak.dataprocessingutils.Bucket;
+import pl.pwr.ite.dynak.dataprocessingutils.TowerSpot;
 
 import java.util.ArrayList;
 

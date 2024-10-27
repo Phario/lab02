@@ -1,13 +1,13 @@
-package pl.pwr.ite.dynak.TowerBuilder;
+package pl.pwr.ite.dynak.towerbuilder;
 
-import pl.pwr.ite.dynak.DataProcessingUtils.Bucket;
-import pl.pwr.ite.dynak.DataProcessingUtils.TowerSpot;
+import pl.pwr.ite.dynak.dataprocessingutils.Bucket;
+import pl.pwr.ite.dynak.dataprocessingutils.TowerSpot;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.ArrayList;
 
 import static java.lang.Math.abs;
-import static pl.pwr.ite.dynak.DataProcessingUtils.RadiusCalculator.calculateNewRadius;
+import static pl.pwr.ite.dynak.dataprocessingutils.RadiusCalculator.calculateNewRadius;
 
 //makes decisions and builds towers
 @Getter
@@ -20,7 +20,7 @@ public class Builder {
         int spotNumber = (int) decision[0];
         int bucketNumber = (int) decision[1];
         double volume = decision[2]; //volume of sand used to build a segment
-        //update data is new radius, height, volume of sand used, spotNumber and bucketNumber
+        //reportData is new radius, height, volume of sand used, spotNumber and bucketNumber
         double[] reportData = new double[5];
         reportData[2] = volume;
         reportData[3] = spotNumber;

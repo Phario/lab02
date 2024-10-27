@@ -1,9 +1,9 @@
-package pl.pwr.ite.dynak.DataProcessingUtils;
+package pl.pwr.ite.dynak.dataprocessingutils;
 import java.io.*;
 import java.util.ArrayList;
 
 
-import static pl.pwr.ite.dynak.DataProcessingUtils.FileRequester.filePathRequest;
+import static pl.pwr.ite.dynak.dataprocessingutils.FileRequester.filePathRequest;
 
 public class TipperLorry {
 
@@ -16,7 +16,7 @@ public class TipperLorry {
             String data;
             while ((data = reader.readLine()) != null) {
                 String[] numbers = data.split(", ");
-                Bucket bucket = new Bucket(Integer.parseInt(numbers[0]), Double.parseDouble(numbers[1]), Integer.parseInt(numbers[2]));
+                Bucket bucket = new Bucket(Integer.parseInt(numbers[0]), Integer.parseInt(numbers[1]), Double.parseDouble(numbers[2]));
                 buckets.add(bucket);
             }
             reader.close();

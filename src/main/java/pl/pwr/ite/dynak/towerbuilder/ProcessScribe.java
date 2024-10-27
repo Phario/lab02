@@ -1,4 +1,4 @@
-package pl.pwr.ite.dynak.TowerBuilder;
+package pl.pwr.ite.dynak.towerbuilder;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,7 +19,7 @@ public class ProcessScribe {
             if (resultsFile.createNewFile()) {
                 FileWriter fileWriter = new FileWriter("results.txt");
                 //write title row
-                fileWriter.write("# nr kroku, nr miejsca, ilość piasku, numer wiaderka, wysokość miejsca po zbudowaniu");
+                fileWriter.write("# nr kroku, nr miejsca, numer wiaderka, wysokość miejsca, promień");
                 //write data to file
                 for (String writableData : writableData) {
                     fileWriter.write("\n");
@@ -34,8 +34,13 @@ public class ProcessScribe {
         }
     }
     public void addData(double[] reportData, int iterator) {
-        double[] formattedData = {iterator+1,reportData[2],reportData[4],reportData[1]};
-        String result = Arrays.stream(reportData).mapToObj(String::valueOf).collect(Collectors.joining(", "));
-        writableData.add(result);
+        //reportData: new radius, height, volume of sand used, spotNumber and bucketNumber
+        //                             i       spotNo       bucketNo        height      radius
+        double[] Data = {reportData[1],reportData[0]};
+        int formattedSpotNumber = (int)reportData[3];
+        int formattedBucketNumber = (int)reportData[4];
+        String result = Arrays.stream(Data).mapToObj(String::valueOf).collect(Collectors.joining(", "));
+        String data = String.format("%s, %s, %s, %s", iterator,formattedSpotNumber, formattedBucketNumber, result);
+        writableData.add(data);
     }
 }
